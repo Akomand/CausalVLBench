@@ -17,18 +17,22 @@ Large language models (LLMs) have shown remarkable ability in various language t
    ```
    conda env create -f requirements/requirements.txt
    ```
-3. Create Dataset in ```image_datasets.py```
-4. Run inference script
+3. Generate synthetic datasets using scripts in ```data/data_generation/```
+4. Create JSON files
+   ```
+   python eval_dataset.py
+   ```
+5. Run inference script
    ```
     ./scripts/[task]/run_[model].sh
    ```
-5. Run evaluation script to obtain performance for all models
+6. Run evaluation script to obtain performance for all models
    ```
    python get_results.py
    ```
 
 ### Data acknowledgements
-Experiments are run on the following datasets to evaluate our model:
+Experiments are run using adapted versions of the following datasets to evaluate our model:
 
 #### Datasets
 <details closed>
