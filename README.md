@@ -12,7 +12,6 @@ Large language models (LLMs) have shown remarkable ability in various language t
 
      ```
      git clone https://github.com/Akomand/CausalVLBench.git
-     cd CausalVLBench
      ```
 2. Create environment and install dependencies
    ```
