@@ -17,8 +17,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='I2T ICL Inference')
 
     parser.add_argument('--dataDir', default='./', type=str, help='Data directory.')
-    parser.add_argument('--dataset', default='operator_induction', type=str, choices=['operator_induction', 'textocr', 'open_mi', 
-                                                                             'clevr','operator_induction_interleaved', 'matching_mi', "pendulum", "pendulum_small", "flow", "flow_small", "circuit"])
+    parser.add_argument('--dataset', default='pendulum', type=str, choices=["pendulum", "pendulum_small", "flow", "flow_small", "circuit"])
     parser.add_argument("--engine", "-e", choices=["openflamingo", "otter-llama", "llava16-7b", "qwen-vl", "qwen-vl-chat", 'internlm-x2', 
                                                    'emu2-chat', 'idefics-9b-instruct', 'idefics-9b', 'idefics-80b-instruct', 'gemini', 'gemini_2_5', 'gpt4v', 'llava-onevision-7b', 'llava-onevision-72b', 'llava-onevision-7b-chat', 'llava-onevision-7b-ft',
                                                    'llava-onevision-0.5b', 'deepseek-vl2', 'deepseek-vl2-large', 'idefics2-8b', 'qwen-vl-2.5-instruct'],
