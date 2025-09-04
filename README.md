@@ -1,6 +1,6 @@
 # CausalVLBench: Benchmarking Visual Causal Reasoning in Large Vision-Language Models
 This is the source code for the implementation of "CausalVLBench: Benchmarking Visual Causal
-Reasoning in Large Vision-Language Models"
+Reasoning in Large Vision-Language Models" (EMNLP 2025 Main Conference)
 
 Large language models (LLMs) have shown remarkable ability in various language tasks, especially with their emergent in-context learning capability. Extending LLMs to incorporate visual inputs, large vision-language models (LVLMs) have shown impressive performance in tasks such as recognition and visual question answering (VQA). Despite increasing interest in the utility of LLMs in causal reasoning tasks such as causal discovery and counterfactual reasoning, there has been relatively little work showcasing the abilities of LVLMs on visual causal reasoning tasks. We take this opportunity to formally introduce a comprehensive causal reasoning benchmark for multi-modal in-context learning from LVLMs. Our CausalVLBench encompasses three representative tasks: causal structure inference, intervention target prediction, and counterfactual prediction. We evaluate the ability of state-of-the-art open-source LVLMs on our causal reasoning tasks across three causal representation learning datasets and demonstrate their fundamental strengths and weaknesses. We hope that our benchmark elucidates the drawbacks of existing vision-language models and motivates new directions and paradigms in improving the visual causal reasoning abilities of LVLMs.
 
@@ -52,3 +52,18 @@ Experiments are run using adapted versions of the following datasets to evaluate
 
 [Link to dataset](https://developer.qualcomm.com/software/ai-datasets/causalcircuit)
 </details>
+
+
+## Citation
+
+If you think our code and benchmark is relevant to your work, we encourage you to cite this paper:
+
+```bibtex
+@inproceedings{
+komanduri2025causalvlbench,
+title={Causal{VLB}ench: Benchmarking Visual Causal Reasoning in Large Vision-Language Models},
+author={Aneesh Komanduri and Karuna Bhaila and Xintao Wu},
+booktitle={The 2025 Conference on Empirical Methods in Natural Language Processing},
+year={2025}
+}
+```
